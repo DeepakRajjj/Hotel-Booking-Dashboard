@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Bookings Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Hotel Bookings Dashboard</h1>
+        
+        <div class="date-range">
+            <h2>Date Range</h2>
+            <div class="date-inputs">
+                <input type="date" id="start-date">
+                <input type="date" id="end-date">
+            </div>
+        </div>
+
+        <div class="charts">
+            <div class="chart-row">
+                <div class="chart" id="visitors-per-day"></div>
+                <div class="chart" id="visitors-per-country"></div>
+            </div>
+            <div class="chart-row">
+                <div class="chart total-chart" id="total-adults">
+                    <h2>Total Adult Visitors</h2>
+                    <div class="total" id="total-adults-value"></div>
+                    <div id="adults-sparkline"></div>
+                </div>
+                <div class="chart total-chart" id="total-children">
+                    <h2>Total Children Visitors</h2>
+                    <div class="total" id="total-children-value"></div>
+                    <div id="children-sparkline"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
